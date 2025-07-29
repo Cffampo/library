@@ -8,31 +8,33 @@
     <title>The Library</title>
 </head>
 <body>
-    <h1>Project: Library</h1>
-    <div class="book-container">
+    <div class="container">
+        <h1>Project: Library</h1>
         <button id="open-dialog">Add new Book</button>
-        <dialog id="book-dialog">
-            <form id="book-form" method="dialog">
-                <label for="title">Title: </label>
-                <input type="text" name="title" id="title" placeholder="The Hobbit" required>
+            <div class="book-container">
+                <dialog id="book-dialog">
+                    <form id="book-form" method="dialog">
+                        <label for="title">Title: </label>
+                        <input type="text" name="title" id="title" placeholder="The Hobbit" required>
 
-                <label for="author">Author: </label>
-                <input type="text" name="author" id="author" placeholder="J.R.R  Tolkien" required>
+                        <label for="author">Author: </label>
+                        <input type="text" name="author" id="author" placeholder="J.R.R  Tolkien" required>
 
-                <label for="pages">Pages: </label>
-                <input type="number" name="pages" id="pages" placeholder="299" required>
+                        <label for="pages">Pages: </label>
+                        <input type="number" name="pages" id="pages" placeholder="299" required>
 
-                <label for="read-status">Read Status:</label>
-                <select id="read-status" required>
-                    <option value="Read">Read</option>
-                    <option value="Not Read">Not Read</option>
-                </select>
+                        <label for="read-status">Read Status:</label>
+                        <select id="read-status" required>
+                            <option value="Read">Read</option>
+                            <option value="Not Read">Not Read</option>
+                        </select>
 
 
-                <button type="submit">Add to Library</button>
-                <button id="cancel" type="button">Cancel</button>
-            </form>
-        </dialog>
+                        <button type="submit">Add to Library</button>
+                        <button id="cancel" type="button">Cancel</button>
+                    </form>
+                </dialog>
+            </div>
     </div>
 </body>
 </html>
