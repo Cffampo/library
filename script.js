@@ -1,18 +1,26 @@
-function Book(name, authorName, pages, read){
+class Book {
+
+    name;
+    authorName;
+    pages;
+    read;
+
+    constructor(name, authorName, pages, read){
     this.id = crypto.randomUUID();
     this.name = name;
     this.authorName = authorName;
     this.pages = pages;
     this.read = read;
-}
-
-Book.prototype.toggleReadStatus = function(){
-    console.log("Toggling read status for", this.name, "Current status:", this.read);
-    if(this.read == "Read"){
-        this.read = "Not Read";
-    } else {
-        this.read = "Read";
     }
+
+    toggleReadStatus() {
+        console.log("Toggling read status for", this.name, "Current status:", this.read);
+            if(this.read == "Read"){
+                this.read = "Not Read";
+            } else {
+                this.read = "Read";
+            }
+    }   
 }
 
 const library = [];
